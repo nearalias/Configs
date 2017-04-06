@@ -1,0 +1,53 @@
+Launch Options:
+-novid -high -threads 4 -tickrate 128
+
+crosshair:
+cl_crosshairalpha "150";
+cl_crosshaircolor "5";
+cl_crosshaircolor_b "0";
+cl_crosshaircolor_r "0";
+cl_crosshaircolor_g "0";
+cl_crosshairdot "0";
+cl_crosshairgap "-100";
+cl_crosshairsize "500";
+cl_crosshairstyle "2";
+cl_crosshairusealpha "1";
+cl_crosshairthickness "0";
+cl_fixedcrosshairgap "-100";
+cl_crosshair_outline "0";
+cl_crosshair_outline_draw "0";
+cl_crosshair_drawoutline "0";
+cl_crosshair_outlinethickness "0";
+
+dot crosshair:
+cl_crosshair_drawoutline "1";
+cl_crosshair_outlinethickness "-1";
+cl_crosshaircolor "red";
+cl_crosshaircolor_b "255";
+cl_crosshaircolor_g "0";
+cl_crosshaircolor_r "255";
+cl_crosshairdot "1";
+cl_crosshairsize "-1";
+cl_crosshairthickness "1";
+cl_crosshairalpha "255";
+cl_crosshairgap "-8";
+cl_crosshairstyle "2";
+cl_crosshairusealpha "1";
+cl_fixedcrosshairgap "-8";
+cl_crosshair_outline "1";
+cl_crosshair_outline_draw "1";
+
+other configs:
+
+rate "128000";
+cl_cmdrate "128";
+cl_updaterate "128";
+cl_interp "0";
+cl_interp_ratio "1";
+cl_forcepreload "1";
+fps_max "0";
+
+mat_queue_mode "-1";
+net_graph "1";
+cl_disablehtmlmotd "1";
+cl_freezecameffects_showholiday "0";

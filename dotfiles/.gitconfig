@@ -1,0 +1,24 @@
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[color "status"]
+  changed = blue normal bold
+  added = yellow normal bold
+  untracked = cyan normal bold
+[color "branch"]
+  upstream = blue normal bold
+  local = cyan normal bold
+  remote = bold red
+[color "diff"]
+  plain = white
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+  whitespace = red blink
+[alias]
+  sl = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all --since='90 days ago'
+[push]
+  default = simple
