@@ -13,3 +13,10 @@ if has("autocmd")
 endif
 filetype plugin indent on
 syntax on
+
+set completeopt-=preview
+
+"Normal mode.
+nnoremap <leader>cf :let g:clang_include_fixer_query_mode=0<cr>:pyf /usr/lib/clang-include-fixer/clang-include-fixer.py<cr>
+"Query mode.
+nnoremap <leader>qf :let g:clang_include_fixer_query_mode=1<cr>:pyf /usr/lib/clang-include-fixer/clang-include-fixer.py<cr>
