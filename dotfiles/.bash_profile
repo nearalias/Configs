@@ -8,6 +8,17 @@ alias ls='ls -GFh'
 alias status='git status'
 alias branches='git branch -vv -l --color'
 alias showcommitfiles='git diff-tree --no-commit-id --name-only -r'
+alias showremotebranches='git ls-remote --heads origin'
+
+# History accross tabs
+export HISTSIZE=1000000
+export HISTFILESIZE=10000000
+# Avoid duplicates
+HISTCONTROL=ignoredups:erasedups
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+# After each command, append to the history file and reread it
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
 
 ### Colours ###
 export CLICOLOR=1
